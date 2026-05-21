@@ -1,0 +1,42 @@
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw~
+.Python
+
+# ── Build artifacts & generated payloads ──────────────────────────────────────
+build/VirusBuilder/
+build/AndroidBuilder/
+build/RemoteView/
+build/Build/work/
+
+# Compiled executables (never commit built payloads)
+*.exe
+*.apk
+*.dll
+*.so
+
+# ── C2 runtime data (victim lists, registry) ──────────────────────────────────
+build/c2_victims.json
+build/c2_registry.json
+1.json
+
+# ── Secrets & credentials ─────────────────────────────────────────────────────
+*.env
+.env
+secrets.*
+webhook.txt
+
+# ── IDE / OS ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ── Claude Code internal ───────────────────────────────────────────────────────
+.claude/
